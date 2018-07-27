@@ -1,0 +1,26 @@
+<ion-content padding>
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col col-12>
+        <img src="assets/imgs/pockets_logo.png">
+      </ion-col>
+    </ion-row>
+
+    <ion-row text-center>
+      <ion-col col-12>
+        <h1 style="color:white">Bienvenido</h1>
+        <hr>
+
+        <button (click)="signInWithFacebook()" ion-button icon-left block >
+          <ion-icon name="logo-facebook"></ion-icon>
+           Ingresar con Facebook
+        </button>
+
+        <button (click)="signInGoogle()" ion-button icon-left block color="google" style="color: white">
+            <ion-icon name="logo-google"></ion-icon>
+            Ingresar con Google
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
