@@ -43,7 +43,7 @@ export class LoginPage {
             user.email,
             user.photoURL,
             user.uid,
-            'facebook'
+            'google.com'
           );
 
           this.navCtrl.setRoot(HomePage);
@@ -65,9 +65,9 @@ export class LoginPage {
           this.usuarioProv.cargarUsuario(
             user.displayName,
             user.email,
-            user.photoURL,
+            user.photoURL+"?type=large",
             user.uid,
-            'facebook'
+            user.providerData[0].providerId
           );
 
           this.navCtrl.setRoot(HomePage);
@@ -85,7 +85,7 @@ export class LoginPage {
           this.usuarioProv.cargarUsuario(
             user.displayName,
             user.email,
-            user.photoURL,
+            user.photoURL+"?type=large",
             user.uid,
             'facebook'
           );

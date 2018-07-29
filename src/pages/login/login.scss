@@ -1,10 +1,12 @@
 page-login {
-  ion-content{
-    background:  linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(15, 46, 0, 0.95)
-    ), url("../assets/imgs/background_login3.jpg");
-    background-attachment: fixed;
-    background-position: center;
-  }
+    ion-content {
+        background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(15, 46, 0, 0.95)), url("../assets/imgs/background_login3.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }

@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-navbar color="secondary">
-    <ion-title>
-        <ion-icon name="home"></ion-icon>
-        Inicio
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar color="dark">
+        <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+
+        <ion-title>
+            Inicio
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-avatar class="center"> <img [src]="user.imagen"> </ion-avatar>
-  <h3>Hola, {{ user.nombre }}.</h3>
+<ion-content padding style="background: #f1f2f2">
+    <ion-avatar class="center"> <img [src]="user.imagen"> </ion-avatar>
+    <h3>Hola, {{ user.nombre }}.</h3>
 
 </ion-content>

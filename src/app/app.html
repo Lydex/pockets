@@ -1,1 +1,39 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="MainMenu">
+    <ion-header>
+        <ion-toolbar color="dark">
+            <ion-title>Menú</ion-title>
+        </ion-toolbar>
+        <div style="height: 150px; background-color: black">
+            Testing...
+        </div>
+    </ion-header>
+    <ion-content>
+        <ion-list no-lines>
+            <ion-list-header>
+                ÓRDENES DE COMPRA
+            </ion-list-header>
+            <ion-item>
+                <ion-icon name="cart" item-left></ion-icon> Realizar una orden
+            </ion-item>
+            <ion-item>
+                <ion-icon name="book" item-left></ion-icon> Historial de compras
+            </ion-item>
+            <ion-list-header>
+                HERRAMIENTAS
+            </ion-list-header>
+            <ion-item>
+                <ion-icon name="qr-scanner" item-left></ion-icon> Lector de ticket
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+    <ion-footer>
+        <ion-toolbar>
+            <button (click)="cerrarSesion()" ion-button block color="danger" menuClose>
+                Cerrar sesión
+            </button>
+        </ion-toolbar>
+    </ion-footer>
+</ion-menu>
+
+<ion-nav #MainMenu [root]="rootPage"></ion-nav>

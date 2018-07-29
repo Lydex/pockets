@@ -1,12 +1,14 @@
 
 import { Injectable } from '@angular/core';
+import { Platform } from 'ionic-angular';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @Injectable()
 export class UsuarioProvider {
 
   usuario: Credenciales = {};
 
-  constructor() {
+  constructor(private platform: Platform, private afAuth: AngularFireAuth) {
 
   }
 
@@ -23,9 +25,8 @@ export class UsuarioProvider {
     this.usuario.uid = uid;
     this.usuario.provider = provider;
 
-
   }
-
+  
 }
 
 
