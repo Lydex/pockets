@@ -18,6 +18,8 @@ import { UsuarioProvider } from '../providers/usuario/usuario';
 // Plugins Facebook, Google Plus
 import { Facebook } from '@ionic-native/facebook';
 import { GooglePlus } from '@ionic-native/google-plus';
+import { CarritoProvider } from '../providers/carrito/carrito';
+import { ProductosProvider } from '../providers/productos/productos';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyAYLc19P83UWhIP1Hpsi7EgVlPAXeHOOVU",
@@ -57,7 +59,9 @@ export const firebaseConfig = {
     Facebook,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UsuarioProvider,
-    GooglePlus
+    GooglePlus,
+    CarritoProvider,
+    ProductosProvider
   ]
 })
 export class AppModule {}

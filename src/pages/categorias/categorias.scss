@@ -1,0 +1,37 @@
+page-categorias {
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      img{
+        -webkit-filter: blur(2px);
+        -moz-filter: blur(2px);
+        -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px);
+      }
+    }
+
+    .card-title {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      padding: 5px;
+      top: 43%;
+      font-size:1.2em;
+      text-transform: uppercase;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+
+  }
+}

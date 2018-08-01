@@ -1,0 +1,21 @@
+page-ordenes {
+
+    ion-card {
+      position: relative;
+      .card-subtitle {
+        padding: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+      }
+    }
+    .price{
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+    }
+
+}

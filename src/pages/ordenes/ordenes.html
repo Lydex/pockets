@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-buttons end>
+        <button ion-button icon-only>
+            <ion-icon name="cart"></ion-icon>
+        </button>
+    </ion-buttons>
+
+    <ion-title>
+        <small>Elige tus productos...</small>
+    </ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg-main card-background-page">
+  <ion-grid>
+      <ion-row>
+
+        <ion-col col-12 col-sm>
+
+            <ion-card style="margin-bottom:0">
+                <img src="https://loremflickr.com/320/240/burger"/>
+                <div class="card-subtitle"><div class="price">$120.00 MXN</div></div>
+                <ion-card-content>
+                  <ion-card-title>
+                    Pocket Food
+                  </ion-card-title>
+
+                  <p text-left>
+                      The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+                  </p>
+                </ion-card-content>
+            </ion-card>
+            <ion-card icon-start ion-button color="danger">
+              <ion-icon name='cart'></ion-icon>
+              Añadir
+            </ion-card>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+</ion-content>
