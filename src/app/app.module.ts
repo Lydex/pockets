@@ -13,13 +13,16 @@ import { LoginPage } from '../pages/login/login';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { UsuarioProvider } from '../providers/usuario/usuario';
 
 // Plugins Facebook, Google Plus
 import { Facebook } from '@ionic-native/facebook';
 import { GooglePlus } from '@ionic-native/google-plus';
+
+//Providers
 import { CarritoProvider } from '../providers/carrito/carrito';
 import { ProductosProvider } from '../providers/productos/productos';
+import { UsuarioProvider } from '../providers/usuario/usuario';
+
 
 export const firebaseConfig = {
   apiKey: "AIzaSyAYLc19P83UWhIP1Hpsi7EgVlPAXeHOOVU",
